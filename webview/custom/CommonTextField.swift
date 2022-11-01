@@ -115,7 +115,7 @@ class CommonTextField: UIView {
         addDoneButtonOnKeyboard()
     }
     
-    func addDoneButtonOnKeyboard(){
+    private func addDoneButtonOnKeyboard() {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
         doneToolbar.barStyle = .default
         
@@ -129,7 +129,7 @@ class CommonTextField: UIView {
         self.textField.inputAccessoryView = doneToolbar
     }
     
-    @objc func doneButtonAction(){
+    @objc func doneButtonAction() {
         self.textField.resignFirstResponder()
     }
 }

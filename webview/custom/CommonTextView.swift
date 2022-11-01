@@ -101,7 +101,7 @@ class CommonTextView: UIView {
         addDoneButtonOnKeyboard()
     }
     
-    private func addDoneButtonOnKeyboard(){
+    private func addDoneButtonOnKeyboard() {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
         doneToolbar.barStyle = .default
         
@@ -115,7 +115,7 @@ class CommonTextView: UIView {
         self.textView.inputAccessoryView = doneToolbar
     }
     
-    @objc func doneButtonAction(){
+    @objc func doneButtonAction() {
         self.textView.resignFirstResponder()
     }
 }
