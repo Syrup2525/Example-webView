@@ -2,6 +2,56 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>supertoss</string>
+		<string>kakaopay</string>
+		<string>cydia</string>
+		<string>kakaotalk</string>
+		<string>kakao{7bd45e3826f58e6f23c485e3bb87ab1b}://kakaolink${iosExecutionParams}</string>
+		<string>kakaokompassauth</string>
+		<string>kakaolink</string>
+		<string>naversearchapp</string>
+		<string>naversearchthirdlogin</string>
+		<string>nmap</string>
+		<string>tel</string>
+		<string>payco://payment/online/linkaccount?from=apple&amp;url=</string>
+		<string>payco://payment/online/linkaccount?from=apple</string>
+		<string>payco://payment/online/linkaccount?from=payco</string>
+		<string>payco://</string>
+		<string>com.wooricard.wcard</string>
+		<string>wooripay</string>
+		<string>citimobileapp</string>
+		<string>paycoapplogin</string>
+		<string>payco</string>
+		<string>lpayapp</string>
+		<string>nhallonepayansimclick</string>
+		<string>shinhan-sr-ansimclick</string>
+		<string>smshinhanansimclick</string>
+		<string>hdcardappcardansimclick</string>
+		<string>smhyundaiansimclick</string>
+		<string>mpocket.online.ansimclick</string>
+		<string>scardcertiapp</string>
+		<string>cloudpay</string>
+		<string>nhappcardansimclick</string>
+		<string>nonghyupcardansimclick</string>
+		<string>lotteappcard</string>
+		<string>lottesmartpay</string>
+		<string>kb-acp</string>
+		<string>ispmobile</string>
+		<string>liivbank</string>
+		<string>citicardappkr</string>
+		<string>citispay</string>
+		<string>lmslpay</string>
+		<string>shinsegaeeasypayment</string>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,5 +71,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>
