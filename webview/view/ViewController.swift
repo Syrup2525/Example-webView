@@ -15,12 +15,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = UserDefaults.standard.string(forKey: "url")
+        let header = UserDefaults.standard.string(forKey: "header")
+
+        tfUrl.text = url ?? ""
+        parameterTextView.text = header ?? ""
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let webViewController = segue.destination as? WebViewController {
             webViewController.url = tfUrl.text
             webViewController.parameter = parameterTextView.text
+            
+            UserDefaults.standard.set(tfUrl.text, forKey: "url")
+            UserDefaults.standard.set(parameterTextView.text, forKey: "header")
         }
     }
     
