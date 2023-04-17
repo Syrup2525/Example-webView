@@ -158,7 +158,9 @@ extension WebViewController: WKScriptMessageHandler {
                 return
             }
             
-            self.alert(message: body, title: "result")
+            self.alert(message: body, title: "result") {
+                self.dismiss(animated: true)
+            }
         }
     }
 }
